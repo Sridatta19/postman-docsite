@@ -1,0 +1,262 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-weight: 200;
+  font-family: "Noto Serif", sans-serif;
+}
+
+.yellow {
+  color: rgb(238, 238, 34);
+}
+
+.red {
+  color: rgb(236, 127, 105);
+}
+
+header {
+  color: #fff;
+  background: linear-gradient(312deg, #343E48 0%, #512d5a 68%, #CB2027 100%);
+  position: fixed;
+  height: 65px;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.container.open-sidebar {
+  right: 0;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  #sidebar {
+    display: none;
+  }
+}
+#sidebar {
+  top: 65px;
+  position: fixed;
+  background:linear-gradient(22deg,#343E48 2%,#363944 14%,#444);
+  bottom: 0;
+  right: auto;
+  left: 0;
+  min-height: 0 !important;
+  width: 260px;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 2;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Slabo", sans-serif;
+}
+.api-section {
+  font-size: 14px;
+  padding-top: 30px;
+  width: 80%;
+  display: block;
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.api-section h2 {
+  font-size: 28px;
+  color: #343E48;
+}
+@media screen and (min-width: 800px) {
+  .content {
+    margin-left: 260px;
+  }
+}
+.content {
+  padding-top: 65px;
+  width: auto;
+  height: auto;
+  position: relative;
+  padding-bottom: 200px;
+}
+.header-content {
+  padding: 32px;
+  display: block;
+  background: #e6e6e6;
+}
+.title {
+  width: 85%;
+  color: #343E48;
+  margin: 0 auto;
+}
+#sidebar ul {
+  margin: 0;
+  padding: 4px 30px 8px 30px;
+  list-style: none;
+}
+
+#sidebar ul li {
+  margin: 0;
+}
+
+#sidebar ul li a {
+  color: #F2F1F1;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 14px;
+  font-weight: 100;
+  text-decoration: none;
+  display: block;
+  word-break: break-word;
+}
+#home {
+  color: #FFF;
+}
+
+header h2 {
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 65px;
+  font-family: "Bellefair", serif;
+}
+
+.blue {
+  color: #264d79;
+}
+.response-item {
+  margin-top: 65px;
+}
+.response-item > ul {
+  padding: 12px !important;
+  background: #F2F1F1 !important;
+}
+
+.group {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.logo-wrapper {
+  display: inline-block;
+  margin-top: 16px;
+  padding-left: 18px;
+  width: 120px;
+  top: 16px;
+}
+.logo-wrapper img {
+  display: inline-block;
+  width: auto;
+  vertical-align: top;
+}
+.group {
+  display: inline-block;
+}
+.group-item h2 {
+  float: right;
+  padding-right: 30px;
+}
+@media screen and (max-width: 800px) {
+  .group-item.right{
+    width: 66%;
+  }
+  .group-item h2 {
+    max-width: 65%;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+li.active > a {
+  color: #ea9707 !important;
+  font-weight: 800 !important;
+}
+ul.submenu li.active > a {
+  font-weight: normal !important;
+}
+.endpoint {
+  font-size: 15px;
+  border: 1px solid #acacac;
+  padding: 12px;
+  border-radius: 3px;
+  margin: 12px;
+  display: inline-block;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+.tile {
+  margin: 36px 0;
+}
+.api-detail {
+  width: 100%;
+  font-size: 16px;
+  font-weight: normal;
+}
+.api-detail tr>th {
+  width: 50%;
+  font-weight: normal;
+  text-align: left;
+  background-color: #9bbbf3;
+  color: #343E48;
+}
+.api-detail td,
+.api-detail th {
+  padding: 8px;
+  font-size: 14px;
+  max-width: 600px;
+  word-wrap: break-word;
+}
+.highlight {
+  color: #e21428;
+  margin-right: 4px;
+}
+.note {
+  color: #343E48;
+  font-weight: 600;
+}
+span.string-value {
+  max-width: 600px;
+  display: block;
+  word-wrap: break-word;
+}
+.data {
+  padding: 24px;
+}
+
+blockquote {
+  background: #EEE;
+  border-left: 6px solid tomato;
+  margin: 1.5em 12px;
+  padding: 1em 12px;
+}
+blockquote p {
+  display: inline;
+}
+.sidebar-search {
+  background-color: #21232b;
+  margin-bottom: 6px;
+  padding: 1rem 1.875rem;
+  top: 65px;
+  box-sizing: border-box;
+  width: 260px;
+}
+.sidebar-search input {
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #FFF;
+}
+.desc span {
+  text-transform: uppercase;
+}
+.optional {
+  color: #4b738e;
+}

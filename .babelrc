@@ -1,0 +1,14 @@
+{
+  "presets": [[
+    "env", {
+      "targets": {
+        "browsers": [
+          "Chrome >= 52",
+          "Safari >= 7",
+          "Explorer 11"
+        ]
+      }
+    }
+  ], "react"],
+  "plugins": []
+}
