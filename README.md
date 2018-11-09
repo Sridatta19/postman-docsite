@@ -4,12 +4,20 @@ Below you will find some information on how to perform common tasks.<br>
 
 ## Table of Contents
 
+- [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Folder Structure](#folder-structure)
 - [Available Scripts](#available-scripts)
   - [npm start](#npm-start)
   - [npm run build](#npm-run-build)
   - [npm run prettier](#npm-run-prettier)
+
+
+### Technologies Used
+
+* `babel` - for transpiling es6
+* `parcel` - for bundling
+* `react 16.7 alpha` - lazy, suspense, hooks
 
 
 ### Getting Started
