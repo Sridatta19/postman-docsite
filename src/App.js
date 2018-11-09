@@ -12,9 +12,8 @@ class App extends React.Component {
           <Route exact path="/" render={() => <Home modules={modules} />} />
           {modules.map((module, i) => {
             return (
-              <div>
+              <div key={i}>
                 <Route
-                  key={i}
                   path={`/${getApiId(module.name)}`}
                   render={() => <Home selectedModule={module} modules={modules} />}
                 />

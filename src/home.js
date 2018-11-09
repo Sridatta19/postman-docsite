@@ -1,6 +1,6 @@
-import React from "react";
-import LeftMenu from "./leftMenu";
-import SectionContent from "./sectionContent";
+import React, { lazy, Suspense } from "react";
+const LeftMenu = lazy(() => import('./components/leftMenu'));
+const SectionContent = lazy(() => import("./components/sectionContent"));
 import { getModuleAPIs, getApiId } from "./utils";
 
 class Home extends React.Component {
@@ -59,18 +59,22 @@ class Home extends React.Component {
             </div>
           </div>
         </header>
-        <LeftMenu
-          scrollToAPI={this.scrollToAPI}
-          onSelectModule={this.selectModule}
-          selectedModuleAPI={selectedModuleAPI}
-          selectedModule={selectedModule}
-          modules={modules}
-        />
-        <SectionContent
-          modules={modules}
-          selectedModule={selectedModule}
-          setChildMenu={this.setChildMenu}
-        />
+        <Suspense fallback={<div>Loading...</div>}>
+          <LeftMenu
+            scrollToAPI={this.scrollToAPI}
+            onSelectModule={this.selectModule}
+            selectedModuleAPI={selectedModuleAPI}
+            selectedModule={selectedModule}
+            modules={modules}
+          />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <SectionContent
+            modules={modules}
+            selectedModule={selectedModule}
+            setChildMenu={this.setChildMenu}
+          />
+        </Suspense>
       </div>
     );
   }
