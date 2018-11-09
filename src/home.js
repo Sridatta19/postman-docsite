@@ -55,7 +55,7 @@ class Home extends React.Component {
         <header>
           <div className="group">
             <div className="group-item right">
-              <h2>Admin Console Documentation</h2>
+              <h2>Postman Collection Documentation</h2>
             </div>
           </div>
         </header>
