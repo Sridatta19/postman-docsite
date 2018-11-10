@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
+import { getModuleAPIs, getApiId } from "./utils";
 const LeftMenu = lazy(() => import('./components/leftMenu'));
 const SectionContent = lazy(() => import("./components/sectionContent"));
-import { getModuleAPIs, getApiId } from "./utils";
 
 class Home extends React.Component {
   constructor(props) {
