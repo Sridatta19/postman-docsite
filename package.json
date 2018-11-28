@@ -1,7 +1,7 @@
 {
   "name": "adminconsoledocs",
   "version": "1.0.0",
-  "description": "Documentation site for adminconsole",
+  "description": "Documentation site for postman collection",
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
